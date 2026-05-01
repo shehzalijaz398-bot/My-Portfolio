@@ -1,43 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anime World</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <div class="nav">
-            <div class="logo">
-                <h1>Anime World </h1>
-            </div>
-            <div class="menu">
-                <a href="#home"><span><b>HOME</b></span></a>
-                <a href="#abourt"><span><b>ABOUT</b></span></a>
-                <a href="#contact"><span><b>CONTACT</b></span></a>
-                <a href="#portfolio"><span><b>PARTFOLIO</b></span></a>
-            </div>
-        </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">AnimeWorld</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#anime">Top Anime</a></li>
+        </ul>
     </nav>
-     <section id="home">
-        <div class="home">
-            <span>I Want To Tell You Something</span>
-            <h1><b>Anime Isn't Cartoon</b></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-                 Voluptatum est sint explicabo, ipsum nam harum impedt. <br>
-                  reiciendis earum consequuntur maxime nesciunt eadque. <br>
-                   nihil vel iusto nobis expedita officiis doloribus.</p>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div data-aos="fade-up">
+            <h1>Welcome to Anime World</h1>
+            <p>Discover the history, culture, and top anime of all time</p>
+            <a href="#anime" class="btn">Explore Now</a>
         </div>
-     </section>
-     <div class="cr">
-        <img src="Images/Goku.png" alt="Goku Image">
-     </div>
-     <div class="ce">
-        <img src="Images/Gojo.png" alt="Gojo Image">
-     </div>
-     <div class="cm">
-        <img src="Images/Naruto.png" alt="Naruto Image">
-     </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="history" class="history">
+        <h2 data-aos="fade-up">History of Anime</h2>
+
+        <p data-aos="fade-right">
+            Anime originated in Japan in the early 20th century, with the first animations appearing around 1917.
+            Early creators were inspired by Western animation, but quickly developed their own unique storytelling
+            style and artistic identity. These early works were short films and experimental animations.
+        </p>
+
+        <p data-aos="fade-left">
+            After World War II, anime began to evolve rapidly. One of the most influential figures was Osamu Tezuka,
+            often called the "God of Manga." His works like Astro Boy introduced cinematic techniques, large expressive
+            eyes, and deep emotional storytelling that became a foundation of modern anime.
+        </p>
+
+        <p data-aos="fade-right">
+            During the 1980s and 1990s, anime expanded globally with iconic series such as Dragon Ball, Naruto,
+            and many others. This era saw the rise of action, adventure, and sci-fi genres that captivated audiences
+            worldwide.
+        </p>
+
+        <p data-aos="fade-left">
+            In the modern era, anime has become a global phenomenon. With streaming platforms and digital production,
+            anime is now more accessible than ever. Popular series like Demon Slayer, Attack on Titan, and Jujutsu
+            Kaisen
+            have achieved massive international success.
+        </p>
+
+        <p data-aos="fade-up">
+            Today, anime is not just entertainment—it's a cultural movement influencing art, fashion, gaming,
+            and storytelling worldwide. Millions of fans continue to celebrate anime for its creativity,
+            emotional depth, and limitless imagination.
+        </p>
+    </section>
+
+    <!-- TOP ANIME -->
+    <section id="anime" class="anime">
+        <h2 data-aos="fade-up">Top 4 Anime</h2>
+
+        <div class="cards">
+
+            <div class="card" data-aos="zoom-in">
+                <img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000102127/855a52ffb75ec2452707373d784f045dac6d86ad831e1686018e6f95e3154cbc">
+                <h3>Dragon Ball</h3>
+                <p>Goku’s legendary journey to become the strongest fighter in the universe.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg">
+                <h3>Naruto</h3>
+                <p>A young ninja strives to become Hokage and gain recognition.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBE8l7xhZNqzNgJqEFfm0aVE6X5I6E2CTUew&s">
+                <h3>Demon Slayer</h3>
+                <p>A boy fights demons to save his sister and avenge his family.</p>
+            </div>
+
+
+            <div class="card" data-aos="zoom-in">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg">
+                <h3>Jujutsu Kaisen</h3>
+                <p>Fight against cursed spirits using powerful sorcery.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Anime World | Made with ❤️</p>
+    </footer>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+
 </body>
+
 </html>
