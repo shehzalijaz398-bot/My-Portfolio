@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== NAVBAR BASE ===== */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+/* NAV CONTAINER */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+/* LOGO */
+.logo {
+    color: #00d9ff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #00d9ff;
+}
+
+/* NAV LINKS */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* LINKS */
+nav ul li a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+    border-radius: 8px;
+}
+
+/* ===== HOVER EFFECT ===== */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00d9ff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d9ff;
+    transform: translateY(-2px);
+}
+
+/* underline animation */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ACTIVE LOOK (optional future use) */
+nav ul li a:active {
+    transform: scale(0.95);
+}
+
+/* FLIP CARD CONTAINER */
+.flip-card {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+/* INNER */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* HOVER EFFECT */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* ===== TYPING ANIMATION ===== */
+.typing-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    width: fit-content;
+    border-right: 3px solid #00d9ff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(20) infinite, blink 0.7s infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* blinking cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* FRONT + BACK COMMON */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+/* FRONT IMAGE */
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* BACK SIDE */
+.flip-card-back {
+    background: #111;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.flip-card-back h3 {
+    margin-bottom: 10px;
+    color: #00d9ff;
+}
+
+.flip-card-back p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.flip-card-back .small {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Section Background */
+.profile-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    gap: 50px;
+}
+
+/* Image */
+.image-box img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: fadeInLeft 1.5s ease;
+}
+
+/* Content */
+.content-box {
+    max-width: 500px;
+    animation: fadeInRight 1.5s ease;
+}
+
+.content-box h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #38bdf8;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.desc {
+    color: #cbd5f5;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Button */
+.btn {
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Section */
+.projects-section {
+    padding: 80px 10%;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+/* Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Delay animation */
+.project-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* ===== INITIAL STATE (hidden) ===== */
+.project-card {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+/* LEFT CARD */
+.project-card.left {
+    transform: translateX(-100px);
+}
+
+/* RIGHT CARD */
+.project-card.right {
+    transform: translateX(100px);
+}
+
+/* CENTER CARD */
+.project-card.center {
+    transform: scale(0.7);
+}
+
+/* ACTIVE (when visible on scroll) */
+.project-card.show {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+/* Image */
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay h3 {
+    font-size: 20px;
+}
+
+/* Hover Effects */
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
