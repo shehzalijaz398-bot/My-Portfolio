@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(22deg,aqua,white,aqua);
+    background-repeat: no-repeat;
+}
+.top{
+    height: 70px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.aia{
+    height: 50px;
+    width: 150px;
+    margin-left: 130px;
+    background: url(Images/AIA_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sho{
+    font-family: sans-serif;
+    font-size: 39px;
+    margin-top: 22px;
+}
+.home{
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    font-family: arial;
+    color: blueviolet;
+    margin-top: 30px;
+}
+.hom{
+    margin-left: 40px;
+    transition: .5s ease-in-out;
+
+}
+.bt{
+    margin-left: 200px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    border: 1px solid;
+    margin-top: 20px;
+    transition: .5s ease-in-out;
+
+}
+.bt:hover{
+    background-color: rgb(0, 4, 255);
+    color: white;
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.hom:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.dy{
+    height: 550px;
+    width: 1350px;
+    display: flex;
+    flex-direction: row;
+}
+.tex{
+    height: 150px;
+    width: 50%;
+    margin-left: 133px;
+    margin-top: 120px;
+}
+.let{
+    font-size: 29px;
+    font-family: arial;
+    color: rgb(206, 38, 38);
+}
+.bra{
+    margin-top: 20px;
+}
+.brand{
+    font-family: impact;
+    font-size: 45px;
+}
+.ava{
+    margin-top: 20px;
+}
+.mi{
+    font-family: arial;
+    font-size: 25px;
+    color: blueviolet;
+}
+.bm{
+    margin-top: 30px;
+}
+.bn{
+    height: 35px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 4, 255);
+    border: 1px solid;
+    transition: .5s ease-in-out;
+
+}
+.bn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.pic{
+    height: 360px;
+    width: 45%;
+    margin-top: 40px;
+    background: url(Images/Sneaker.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
