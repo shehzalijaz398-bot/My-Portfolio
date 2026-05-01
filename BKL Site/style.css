@@ -1,0 +1,905 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.back{
+    width: 100%;
+    height: 641px;
+    background-color: rgb(11, 0, 77);
+    display: flex;
+    align-items: center;
+}
+.pic{
+    height: 350px;
+    width: 450px;
+    margin-left: 180px;
+    border: 2px solid white;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: url(Images/2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tex{
+    height: 350px;
+    width: 600px;
+    font-family: arial;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.tex h1{
+    color: white;
+}
+.tex span{
+    color: rgba(255, 255, 255, 0.507);
+}
+.tex p{
+    color: rgba(255, 255, 255, 0.788);
+    margin-top: 20px;
+}
+.logo{
+    height: 60px;
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.face{
+    height: 50px;
+    width: 50px;
+    background: url(Images/face.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.inst{
+    height: 40px;
+    width: 40px;
+    background: url(Images/insta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.twit{
+    height: 50px;
+    width: 50px;
+    background: url(Images/twet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 15px;
+
+}
+.bac{
+    width: 100%;
+    height: 600px;
+    font-family: arial;
+    color: rgb(11, 0, 77);
+}
+.head{
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head h1{
+    font-size: 50px;
+}
+.box{
+    height: 350px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    background: url(Images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    transition: .5s ease-in-out;
+}
+.box:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.box::after{
+    position: absolute;
+    content: "Sell & Buy Properties";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(79, 80, 76, 0.384);
+}
+.bot{
+    height: 350px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    background: url(Images/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    transition: .5s ease-in-out;
+}
+.bot:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.bot::after{
+    position: absolute;
+    content: "Made Modren Socity";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(79, 80, 76, 0.384);
+}
+.bop{
+    height: 350px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    background: url(Images/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    transition: .5s ease-in-out;
+}
+.bop:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.bop::after{
+    position: absolute;
+    content: "Arrange Party Place's";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(79, 80, 76, 0.384);
+}
+.fff{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.bn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bn button{
+    margin-top: 50px;
+    height: 40px;
+    width: 170px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(11, 0, 77);
+    box-shadow: -2px 2px 4px 0px rgba(12, 0, 77, 0.596) ;
+    color: white;
+    font-size: 15px;
+    font-family: arial;
+}
+.baa{
+    width: 100%;
+    height: 641px;
+    background-color: rgb(11, 0, 77);
+    display: flex;
+    align-items: center;
+}
+.abo{
+    height: 500px;
+    width: 500px;
+    color: white;
+    font-family: arial;
+    margin-left: 150px;
+}
+.abo h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.abo span{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.623);
+}
+.abo p{
+    color: rgba(255, 255, 255, 0.418);
+    margin-top: 25px;
+}
+.hiha{
+    height: 270px;
+    width: 500px;
+    margin-left: 30px;
+    border: 2px solid white;
+    background: url(Images/5.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inq{
+    width: 100%;
+    height: 671px;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.book h1{
+    font-size: 50px;
+}
+.book{
+    width: 100%;
+    height: 67px;
+    margin-top: 40px;
+    color: rgb(11, 0, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.num{
+    color: rgb(11, 0, 77);
+    font-size: 13px;
+}
+.hum{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nam{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 30px;
+    width: 830px;
+}
+.mail{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 30px;
+    width: 830px;
+    margin-top: 10px;
+}
+.adre{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 150px;
+    width: 830px;
+    margin-top: 10px;
+}
+.bum{
+    margin-top: 50px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(11, 0, 77);
+    box-shadow: -2px 2px 4px 0px rgba(12, 0, 77, 0.575) ;
+    color: white;
+    font-size: 15px;
+    font-family: arial;
+}
+.phon{
+    width: 400px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iph{
+    height: 120px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.iph span{
+    color: rgb(11, 0, 77);
+    font-size: 15px;
+    margin-top: 10px;
+}
+.and{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: url(Images/phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.andr{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: url(Images/msg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.phom{
+    width: 400px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.last{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(11, 0, 77);
+}
+.brand{
+    height: 200px;
+    width: 250px;
+    margin-left: 50px;
+    background: url(Images/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.supp{
+    height: 200px;
+    width: 150px;
+    color: white;
+    font-family: arial;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.supp span{
+    margin-top: 10px;
+}
+.com{
+    height: 200px;
+    width: 150px;
+    color: white;
+    font-family: arial;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.com span{
+    margin-top: 10px;
+}
+.end{
+    height: 120px;
+    width: 150px;
+    color: white;
+    font-family: arial;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.free{
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.facee{
+    height: 35px;
+    width: 35px;
+    background: url(Images/face.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.twetar{
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+    background: url(Images/twet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.instag{
+    height: 27px;
+    width: 27px;
+    margin-left: 5px;
+    background: url(Images/insta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 600px){
+    body{
+        width: 50%;
+    }
+    .back{
+        height: 580px;
+        width: 600px;
+        background-color: rgb(11, 0, 77);
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .pic{
+    height: 250px;
+    width: 480px;
+    margin-top: 10px;
+    margin-left: 35px;
+    border: 2px solid white;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: url(Images/2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .tex{
+    height: 150px;
+    width: 500px;
+    font-family: arial;
+    margin-left: 35px;
+    }
+.tex h1{
+    color: white;
+    font-size: 30px;
+    }
+.tex span{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.507);
+    }
+.tex p{
+    color: rgba(255, 255, 255, 0.788);
+    margin-top: 10px;
+    font-size: 15px;
+    }
+    .logo{
+    height: 40px;
+    width: 300px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.face{
+    height: 40px;
+    width: 40px;
+    background: url(Images/face.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.inst{
+    height: 35px;
+    width: 35px;
+    background: url(Images/insta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+.twit{
+    height: 40px;
+    width: 40px;
+    background: url(Images/twet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+.bac{
+    width: 600px;
+    height: 430px;
+    font-family: arial;
+    color: rgb(11, 0, 77);
+}
+.head{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+.head h1{
+    font-size: 25px;
+}
+.box{
+    height: 270px;
+    width: 180px;
+    border: none;
+    border-radius: 15px;
+    background: url(Images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: px;
+    margin-left: 5px;
+    transition: .5s ease-in-out;
+}
+.box:hover{
+    transform: scale(0.9);
+    transition: .5s ease-in-out;
+}
+.box::after{
+    position: absolute;
+    content: "Sell & Buy Properties";
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 270px;
+    width: 181px;
+    border-radius: 15px;
+    background-color: rgba(79, 80, 76, 0.384);
+}
+.bot{
+    height: 270px;
+    width: 180px;
+    border: none;
+    border-radius: 15px;
+    background: url(Images/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: px;
+    margin-left: -15px;
+    transition: .5s ease-in-out;
+}
+.bot:hover{
+    transform: scale(0.9);
+    transition: .5s ease-in-out;
+}
+.bot::after{
+    position: absolute;
+    content: "Made Modren Socity";
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 270px;
+    width: 181px;
+    border-radius: 15px;
+    background-color: rgba(79, 80, 76, 0.384);
+}
+.bop{
+    height: 270px;
+    width: 180px;
+    border: none;
+    border-radius: 15px;
+    background: url(Images/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: px;
+    margin-left: -15px;
+    transition: .5s ease-in-out;
+}
+.bop:hover{
+    transform: scale(0.9);
+    transition: .5s ease-in-out;
+}
+.bop::after{
+    position: absolute;
+    content: "Arrange Party Place's";
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 270px;
+    width: 181px;
+    border-radius: 15px;
+    background-color: rgba(79, 80, 76, 0.384);
+}
+.fff{
+    width: 600px;
+    height: 330px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bn{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bn button{
+    margin-top: 30px;
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(11, 0, 77);
+    box-shadow: -2px 2px 4px 0px rgba(12, 0, 77, 0.603) ;
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+    margin-left: -30px;
+}
+.baa{
+    width: 600px;
+    height: 641px;
+    background-color: rgb(11, 0, 77);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.abo{
+    height: 500px;
+    width: 500px;
+    color: white;
+    font-family: arial;
+    margin-left: 0px;
+}
+.abo h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.abo span{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.623);
+}
+.abo p{
+    color: rgba(255, 255, 255, 0.418);
+    margin-top: 10px;
+    font-size: 15px;
+}
+.hiha{
+    height: 220px;
+    width: 450px;
+    margin-left: -35px;
+    margin-top: -130px;
+    border: 2px solid white;
+    background: url(Images/5.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inq{
+    width: 600px;
+    height: 500px;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.book{
+    width: 100%;
+    height: 39px;
+    margin-top: 15px;
+    color: rgb(11, 0, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.num{
+    color: rgb(11, 0, 77);
+    font-size: 11px;
+}
+.hum{
+    width: 500px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nam{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 25px;
+    width: 500px;
+    margin-top: 10px;
+}
+.mail{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 25px;
+    width: 500px;
+    margin-top: 5px;
+}
+.adre{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 120px;
+    width: 500px;
+    margin-top: 5px;
+}
+.bum{
+    margin-top: 10px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(11, 0, 77);
+    box-shadow: -2px 2px 4px 0px rgba(12, 0, 77, 0.575) ;
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+}
+.phon{
+    width: 350px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.iph{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.iph span{
+    color: rgb(11, 0, 77);
+    font-size: 12px;
+    margin-top: 0px;
+}
+.and{
+    height: 80px;
+    width: 55px;
+    border-radius: 50%;
+    background: url(Images/phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.andr{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: url(Images/msg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.phom{
+    width: 350px;
+    margin-top: 15px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.last{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(11, 0, 77);
+}
+.brand{
+    height: 200px;
+    width: 150px;
+    margin-left: -30px;
+    background: url(Images/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.supp{
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-family: arial;
+    margin-left: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.supp span{
+    margin-top: 10px;
+}
+.com{
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.com span{
+    margin-top: 10px;
+}
+.end{
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: 14px;
+    font-family: arial;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.free{
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+}
+.facee{
+    height: 30px;
+    width: 30px;
+    background: url(Images/face.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.twetar{
+    height: 30px;
+    width: 30px;
+    margin-left: 1px;
+    background: url(Images/twet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.instag{
+    height: 25px;
+    width: 25px;
+    margin-left: 2px;
+    background: url(Images/insta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+}
