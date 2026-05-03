@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<form>
+<table align="center" cellpadding="10" width="700">
+
+    <tr>
+        <td colspan="2" align="center">
+            <h1>Student Registration Form</h1>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Roll No:</td>
+        <td><input type="text" size="50" name="roll number" placeholder="Enter Roll Number" required></td>
+    </tr>
+
+    <tr>
+        <td>Student Name:</td>
+        <td>
+            <input type="text" name="first name" placeholder="Enter First Name" size="22"> -
+            <input type="text" name="last name" placeholder="Enter Last Name" size="21">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Father's Name:</td>
+        <td><input type="text" name="father name" size="50" placeholder="Enter Father Name" required></td>
+    </tr>
+
+    <tr>
+        <td>Date of Birth:</td>
+        <td>
+            <input type="text" name="day" placeholder="Day" size="3" required> -
+            <input type="text" name="month" placeholder="Month" size="3" required> -
+            <input type="text" name="year" placeholder="Year" size="6" required>
+            (DD-MM-YYYY)
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mobile No:</td>
+        <td>
+            <input type="text" value="+92" size="2"> -
+            <input type="number" name="phone number" placeholder="3XXXXXXXXX" size="41" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Email ID:</td>
+        <td><input type="email" name="email" placeholder="Enter Email" size="50" required></td>
+    </tr>
+
+    <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" placeholder="Enter Password" size="50" required></td>
+    </tr>
+
+    <tr>
+        <td>Gender:</td>
+        <td>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </td>
+    </tr>
+
+    <tr>
+        <td>Skill's:</td>
+        <td>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> Java Script
+            <input type="checkbox"> React
+            <input type="checkbox"> SQL
+        </td>
+    </tr>
+
+    <tr>
+        <td>Course:</td>
+        <td>
+            <select>
+                <option>-- Select Course --</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>Js.node</option>
+                <option>PHP</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Student Photo:</td>
+        <td><input type="file" name="photo"></td>
+    </tr>
+
+    <tr>
+        <td>City:</td>
+        <td><input type="text" name="city" placeholder="Enter City Name" size="50" required></td>
+    </tr>
+
+    <tr>
+        <td>Address:</td>
+        <td><textarea rows="5" cols="52"  placeholder="Enter Your Address" required></textarea></td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+
+</table>
+</form>
+
+</body>
+</html>
